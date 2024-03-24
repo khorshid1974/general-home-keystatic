@@ -2,7 +2,11 @@ import { config, fields, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'cloud',
+    
+  },
+  cloud: {
+    project: 'general-home/gh-keystatic',
   },
   collections: {
     posts: collection({
